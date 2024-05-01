@@ -1,6 +1,6 @@
 {
     "name": "framer-animations",
-    "version": "1.5.9",
+    "version": "1.5.11",
     "description": "Simple, programmatic `framer-motion` animations",
     "type": "module",
     "scripts": {
@@ -12,7 +12,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/moveread/framer-animations"
+        "url": "https://github.com/marciclabas/react-chakra",
+        "directory": "framer-animations"
     },
     "engines": {
         "node": "^18.0.0 || >=20.0.0"

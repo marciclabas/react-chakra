@@ -2,7 +2,7 @@
 
 > Simple, programmatic `framer-motion` animations
 
-- Demos: https://moveread.github.io/framer-animations/
+- [Live Demo](https://marciclabas.github.io/react-chakra/)
 
 ## Loader/spinner
 
