@@ -1,0 +1,1 @@
+import{j as t,V as n}from"./index-DxIq7Tj3.js";import{T as e}from"./chunk-2OOHT3W5-CY_e-lDa.js";function r(){return t.jsxs(n,{h:"100%",w:"100%",align:"center",justify:"center",children:[t.jsx(e,{fontSize:"1.8rem",children:"How do you think the tab change animation works?"}),t.jsx(e,{children:"Up, down, left, right, you name it"})]})}export{r as FullSlideshow,r as default};
