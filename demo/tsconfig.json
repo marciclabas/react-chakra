@@ -21,6 +21,9 @@
     "noFallthroughCasesInSwitch": true,
 
     "paths": {
+      // "chakra-components/confirmation": ["/home/m4rs/github/ui/react-chakra/chakra-components/src/confirmation.tsx"],
+      // "chakra-components/select": ["/home/m4rs/github/ui/react-chakra/chakra-components/src/select"],
+      // "chakra-components": ["/home/m4rs/github/ui/react-chakra/chakra-components/src"],
       // "framer-animations/previewed-carousel": ["/home/m4rs/mr-github/lib/js/ui/framer-animations/framer-animations/src/previewed-carousel"],
       // "framer-animations/slideshow": ["/home/m4rs/mr-github/lib/js/ui/framer-animations/framer-animations/src/slideshow"],
       // "framer-animations": ["/home/m4rs/mr-github/lib/js/ui/framer-animations/framer-animations/src"]

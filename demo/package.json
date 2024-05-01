@@ -19,9 +19,11 @@
     "@haskellian/async": "^1.0.2",
     "@haskellian/mod": "^1.0.0",
     "@haskellian/range": "^1.0.1",
+    "chakra-components": "1.0.3",
     "framer-animations": "^1.5.9",
     "framer-motion": "^11.0.18",
     "react": "^18.2.0",
+    "react-code-blocks": "^0.1.6",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

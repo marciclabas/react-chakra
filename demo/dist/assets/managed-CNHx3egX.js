@@ -1,0 +1,1 @@
+function i(){let s=()=>{},r=()=>{},t={status:"pending"};const n=new Promise((o,a)=>{s=e=>{t={status:"resolved",value:e},o(e)},r=e=>{t={status:"rejected",reason:e},a(e)}});return Object.assign(n,{resolve:s,reject:r,...t})}export{i as m};

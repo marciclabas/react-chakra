@@ -1,12 +1,14 @@
 import { Tab, TabList, TabPanel, TabPanels, Tabs, VStack } from '@chakra-ui/react'
 import { Direction, Slideshow } from 'framer-animations/slideshow'
-import { useState } from 'react'
-import Swipe from './components/Swipe'
-import Touch from './components/Touch'
-import Loader from './components/Loader'
-import PreviewedCarousel from './components/PreviewedCarousel'
-import FullSlideshow from './components/FullSlideshow'
-import ElemHighlight from './components/ElemHighlight'
+import { useState, lazy, Suspense } from 'react'
+const Swipe = lazy(() => import('./components/Swipe'));
+const Touch = lazy(() => import('./components/Touch'));
+const Loader = lazy(() => import('./components/Loader'));
+const PreviewedCarousel = lazy(() => import('./components/PreviewedCarousel'));
+const FullSlideshow = lazy(() => import('./components/FullSlideshow'));
+const ElemHighlight = lazy(() => import('./components/ElemHighlight'));
+const Confirmation = lazy(() => import('./components/Confirmation'));
+const Select = lazy(() => import('./components/Select'));
 
 type TabT = {
   display: string
@@ -19,7 +21,9 @@ const tabs: TabT[] = [
   { display: 'Touch', elem: <Touch /> },
   { display: 'Loader', elem: <Loader /> },
   { display: 'Full Slideshow', elem: <FullSlideshow /> },
-  { display: 'Highlight', elem: <ElemHighlight /> }
+  { display: 'Highlight', elem: <ElemHighlight /> },
+  { display: 'Confirmation', elem: <Confirmation /> },
+  { display: 'Single Select', elem: <Select /> },
 ]
 
 
@@ -49,7 +53,9 @@ export function App() {
             <Slideshow key={i} pageKey={tab} direction={dir} style={{zIndex: i === tab ? 1: -1}}>
               <TabPanel w='100%' h='100%' display='flex'>
                 <VStack w='100%' h='100%' align='center'>
-                  {t.elem}
+                  <Suspense>
+                    {t.elem}
+                  </Suspense>
                 </VStack>
               </TabPanel>
             </Slideshow>
