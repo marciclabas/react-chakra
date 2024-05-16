@@ -1,7 +1,6 @@
 import { useCallback, useState } from "react"
 import { Center, Heading, VStack } from "@chakra-ui/react"
-import { SwipeDirection } from 'framer-animations'
-import Carousel from "../../framer-animations/src/carousels/directional/DirectionalCarousel"
+import { Carousel, SwipeDirection } from 'framer-animations'
 import { mod } from "@haskellian/mod"
 
 export function App() {
@@ -28,7 +27,7 @@ export function App() {
 
   return (
     <VStack h='100vh' w='100vw' align='center' justify='center' overflow='hidden'>
-      <Carousel page={page} item={elem} move={move} direction={dir} />
+      <Carousel page={page} item={elem} move={move} direction={dir} axis='y' />
     </VStack>
   )
 }
